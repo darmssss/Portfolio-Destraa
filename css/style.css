@@ -1,0 +1,258 @@
+* {
+	padding:0;
+	margin:0;
+	font-family: sans-serif;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+.medsos {
+	padding:30px 30px;
+	background-color: #494949;
+}
+.medsos ul li {
+	display: inline-block;
+	color: #e6e4e4;
+	margin-right: 10px;
+}
+.container {
+	width:80%;
+	margin:0 auto;
+}
+.container:after {
+	content:'';
+	display: block;
+	clear: both;
+}
+header h1 {
+	float: left;
+	padding:15px 0;
+	color: #535353;
+}
+header ul {
+	float: right;
+}
+header ul li {
+	display: inline-block;
+}
+header ul li a {
+	padding:25px 20px;
+	display: inline-block;
+}
+header ul li a:hover {
+	background-color: #535353;
+	color: #505050;
+}
+.active {
+	background-color: #535353;
+	color: #ffffff;
+}
+.banner {
+	height: 60vh;
+	background-image: url('../img/t.jpeg');
+	background-size: cover;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column; /* Tambahkan ini untuk menata elemen secara vertikal */
+  }
+  
+  .banner h2 {
+	color: #ffffff;
+	z-index: 1;
+	padding: 15px 15px;
+	border: 2px solid #303030;
+  }
+  .banner-text {
+	color: #fff;
+	text-align: center;
+	margin-top: 60px; /* Atur margin atas untuk menjaga jarak antara teks dengan judul */
+	font-style: inherit;
+	color: #fff;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .banner-text a {
+	color: #ffffff;
+	text-decoration: underline;
+  }
+section {
+	padding:50px 0;
+}
+section h3 {
+	text-align: center;
+	padding:20px 0;
+	color: #000000;
+	margin-bottom: 25px;
+	
+}
+.about,
+.service {
+	padding-bottom: 50px;
+}
+.about p {
+	color: #313131;
+	word-spacing: 2px;
+	line-height: 25px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.service {
+	background-color: #9c9c9c;
+	background-image: url('../img/t.jpeg');
+}
+.box {
+	color: #fff8f8;
+}
+.box:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.box {
+    display: flex;
+    justify-content: space-between; /* Membuat ruang antara kolom secara merata */
+}
+
+.box .col-4 {
+    flex: 1; /* Menyesuaikan lebar kolom secara fleksibel */
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex; /* Mengubah tata letak ke flexbox */
+    align-items: center; /* Mengatur ikon dan teks secara vertikal di tengah */
+}
+
+/* Optional: Mengatur lebar kolom */
+@media screen and (min-width: 768px) {
+    .box .col-4 {
+        width: calc(25% - 20px); /* Mengurangi lebar kolom dengan margin yang ditambahkan */
+    }
+}
+
+.box .col-4 .icon {
+    margin-right: 10px; /* Menambahkan ruang antara ikon dan teks */
+	
+}
+footer {
+	padding:40px 0;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+}
+.bg-loader {
+	background-color: #eee;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.bg-loader .loader {
+	width:100px;
+	height: 100px;
+	border:3px solid #fff;
+	border-radius: 50%;
+	border-top-color: #fafafa;
+	border-right-color: #148F77;
+	border-bottom-color: #148F77;
+	animation: puterin .8s linear infinite;
+}
+.label {
+	background-color: #747474;
+	color: #fff;
+}
+@keyframes puterin {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@media screen and (max-width: 768px){
+	.container {
+		width:90%;
+	}
+	header h1 {
+		text-align: center;
+		float: none;
+	}
+	header ul {
+		text-align: center;
+		float: none;
+	}
+	.box .col-4 {
+		width:50%;
+		float: none;
+		margin-bottom: 20px;
+	}
+}
+/* Atur margin kanan pada ikon terakhir agar tidak ada jarak ekstra yang ditambahkan */
+.box .col-4:last-child .icon {
+    margin-right: 190px;
+}
+
+img {
+    display: block; /* Mengubah gambar menjadi elemen blok agar dapat diatur dengan mudah */
+    margin: 0 auto; /* Memberikan margin atas dan bawah nol, dan margin kiri dan kanan otomatis, sehingga gambar akan terpusat secara horizontal */
+}
+
+.contact ul {
+    list-style-type: none; /* Menghapus bullet point pada daftar */
+    padding: 0; /* Menghapus padding default */
+    display: flex; /* Menggunakan flexbox untuk mengatur tata letak ulang secara horizontal */
+    justify-content: center; /* Untuk menengahkan ikon secara horizontal */
+}
+
+.contact li {
+    margin: 0 150px; /* Memberikan margin agar ikon terpisah */
+}
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+	background-image: url('../img/t.jpeg');
+    background-size: cover; /* Mengatur ukuran gambar agar menutupi seluruh area kontainer */
+    background-position: center; /* Mengatur posisi gambar agar terletak di tengah kontainer */
+}
+
+.contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-icon {
+    font-size: 100px;
+	color: #ffffff
+}
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-icon {
+    font-size: 100px;
+    margin-right: 10px; /* Jarak antara ikon dan teks */
+}
+
+.contact-link {
+    display: flex; /* Menggunakan flexbox untuk menyesuaikan ikon dan teks */
+    align-items: center; /* Menyamakan tinggi ikon dan teks */
+}
+
+.contact-link span {
+    color: #ffffff; /* Ganti dengan warna yang Anda inginkan, misalnya merah (#ff0000) */
+	font-size: 16px;
+}
